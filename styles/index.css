@@ -1,0 +1,111 @@
+/* ====== Body & Navigation ====== */
+body {
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+
+nav > ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+nav li:hover {
+    background-color: lightgray;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ====== Section & Form ====== */
+/* Section center on page */
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* full screen height */
+    background-color: #f5f5f5;
+}
+
+
+/* Form container */
+form {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 450px; /* fixed width for better alignment */
+}
+
+
+/* Each form row */
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+/* Labels fixed width for aligned inputs */
+label {
+    display: inline-block;
+    width: 150px; /* all inputs start from same line */
+    vertical-align: top;
+    font-weight: bold;
+}
+
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+    width: 250px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box; /* includes padding in width */
+}
+
+
+/* Phone specific inputs */
+input.phone-code {
+    width: 55px;
+}
+
+
+input.phone-number {
+    width: 180px;
+}
+
+
+/* Textareas same style as input */
+textarea {
+    resize: vertical; /* allow vertical resizing */
+}
+
+
+/* Submit button */
+input[type="submit"] {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
